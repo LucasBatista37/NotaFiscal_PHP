@@ -55,28 +55,22 @@ $valor2 = $_POST['valor2'];
 $valor_pago = $_POST['valor_pago'];
 $valor_total = $valor1 + $valor2;
 
-
 echo "Nome do cliente: $nome<br>";
 echo "Nome do primeiro produto: $produto1 <br>";
 echo "Nome do segundo produto: $produto2 <br>";
 echo "Valor total: $valor_total <br>";
-
-
+    
 if($valor_total <= $valor_pago){
-
 $troco = $valor_pago - $valor_total;
 echo "Valor pago: $valor_pago <br>";
 echo "Troco: $troco <br>";
-
 }
 
 else {
 $falta = $valor_total - $valor_pago;
 echo "Valor pago: $valor_pago <br>";
 echo "Falta: $falta <br>";
-
 }
-
 }
 
  ?>
